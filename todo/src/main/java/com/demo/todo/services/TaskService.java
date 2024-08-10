@@ -46,8 +46,8 @@ public class TaskService {
     }
 
     public List<Task> getAllTasks() {
-//        return taskRepository.findAll();
-        return List.of(taskRepository.findAllOrderById());
+        return taskRepository.findAll();
+//        return List.of(taskRepository.findAllOrderById());
     }
 
     public Task updateTask(int id, String description) {
